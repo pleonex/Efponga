@@ -1,0 +1,8 @@
+Pong/db/
+Pong/incremental_db/
+
+*.rpt
+*.done
+*.summary
+*.pof
+*.sof
