@@ -6,3 +6,4 @@ Pong/incremental_db/
 *.summary
 *.pof
 *.sof
+*.bak

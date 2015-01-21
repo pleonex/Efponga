@@ -45,10 +45,6 @@ set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name VHDL_FILE VGA_SYNC.VHD
-set_global_assignment -name VHDL_FILE vga_pll.vhd
-set_global_assignment -name VHDL_FILE bola.vhd
-set_global_assignment -name VHDL_FILE pong.vhdl
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
@@ -63,8 +59,30 @@ set_location_assignment PIN_A7 -to vga_hs
 set_location_assignment PIN_E10 -to vga_red
 set_location_assignment PIN_D8 -to vga_vs
 set_global_assignment -name MISC_FILE "C:/Pong/pong.dpf"
-set_location_assignment PIN_P23 -to down
-set_location_assignment PIN_W26 -to up
-set_location_assignment PIN_G26 -to down2
-set_location_assignment PIN_N23 -to up2
+set_global_assignment -name VHDL_FILE escenario.vhd
+set_global_assignment -name VHDL_FILE VGA_SYNC.VHD
+set_global_assignment -name VHDL_FILE vga_pll.vhd
+set_global_assignment -name VHDL_FILE bola.vhd
+set_global_assignment -name VHDL_FILE pong.vhdl
+set_global_assignment -name VHDL_FILE pala.vhd
+set_global_assignment -name VHDL_FILE marcador.vhd
+set_global_assignment -name MISC_FILE "C:/Users/WindowsUser/Desktop/SED/Efponga/Pong/pong.dpf"
+set_location_assignment PIN_W26 -to btn_down1
+set_location_assignment PIN_N23 -to btn_down2
+set_location_assignment PIN_P23 -to btn_up1
+set_location_assignment PIN_G26 -to btn_up2
+set_location_assignment PIN_R2 -to hex00
+set_location_assignment PIN_P4 -to hex01
+set_location_assignment PIN_P3 -to hex02
+set_location_assignment PIN_M2 -to hex03
+set_location_assignment PIN_M3 -to hex04
+set_location_assignment PIN_M5 -to hex05
+set_location_assignment PIN_M4 -to hex06
+set_location_assignment PIN_U9 -to hex20
+set_location_assignment PIN_U1 -to hex21
+set_location_assignment PIN_U2 -to hex22
+set_location_assignment PIN_T4 -to hex23
+set_location_assignment PIN_R7 -to hex24
+set_location_assignment PIN_R6 -to hex25
+set_location_assignment PIN_T3 -to hex26
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
